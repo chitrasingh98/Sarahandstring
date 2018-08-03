@@ -19,7 +19,6 @@ def palin(s):
     else:
       return 0
 def calMax(a):
-  a="0abbccba0"
   l=len(a)
   Max=0
   for k in range(1,l-1):
@@ -30,15 +29,17 @@ def calMax(a):
       #print(f"j is{j}")
       if(j>Max):
         Max=j
+        print(s)
   return Max  
 def main():
-  s1="tseccodecell"
-  s2="jklmnoghiighknomlkj"
-  s3="abcdefdcba"
-  s4="aabcdefecdabeabeacafic"
-  s5="babab"
+  s1="0tseccodecell0"
+  s2="0jklmnoghiighknomlkj0"
+  s3="0abcdefdcba0"
+  s4="0aabcdefecdabeabeacafic0"
+  s5="0babab0"
   Sum=0
   a=[s1,s2,s3,s4,s5]
+  #a=[s1]
   print(a)
   for i in a:
     Sum+=calMax(i)
